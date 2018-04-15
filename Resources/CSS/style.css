@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+html {
+  font-family: helvetica;
+  font-size: 18;
+}
+
 .top {
   display: flex;
   height: 75px;
@@ -10,19 +15,22 @@
   align-items: center;
   padding-left: 15%;
   background-color: black;
-  font-family: helvetica;
+}
+
+.top img {
+  height: 1.5rem
 }
 
 .top h2 {
   padding-left: 20px;
-  font-size: 20px;
-  font-family: helvetica;
+  font-size: 1rem;
+
 }
 
 .splash {
   display: flex;
   align-items: center;
-  height: 500px;
+  height: 25rem;
   width: auto;
   background-image: url(../images/moto.jpeg);
   background-size: cover;
@@ -32,47 +40,99 @@
 .box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 10%;
+  margin-left: 15%;
   padding-left: 20px;
-  height: 200px;
-  width: 300px;
+  width: 20rem;
+  height: 10rem;
   color: white;
   background-color: black;
-  font-family: helvetica;
+  font-weight: bold;
+
 }
 
 .splash h1 {
-  font-size: 30px;
-  padding: 3px 0;
-  font-family: helvetica;
+  font-size: 2rem;
+  padding-left: 1rem;
+
+
 }
 
 .splash h3 {
-  font-size: 16px;
-  padding-bottom: 20px;
-  font-family: helvetica;
+  padding: 2rem 0 .25rem 1rem;
+  font-size: 1rem;
+
 }
 
 .red {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   width: auto;
-  background-color: red;
+  background-color: firebrick;
   color: white;
   font-size: 25px;
-  font-family: helvetica;
-
+  padding: 0 15%;
   }
 
   span {
-    padding: 0 25px;
-
+    padding: 0 20px;
+    flex-wrap: nowrap;
   }
 
-  .bottom {
-    background-color: black;
+.items,
+.infobox {
+  margin-top: 3rem;
+  padding: 0 15%;
+  width: 960px;
+}
 
+.items div {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.items img {
+  border: 4px solid black;
+  padding: 2rem 2rem;
+  width: 30%;
+  height: 9rem;
+  width: 9rem;
+}
+
+.items p {
+  height: 2rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: .5rem;
+}
+
+.infobox div {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+
+}
+
+.infobox p {
+  background-color: black;
+  color: white;
+  width: 250px;
+  padding: 1rem 0 1rem 2rem;
+  margin-right: 190px;
+}
+
+.infobox a {
+
+}
+
+  .bottom {
+
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 2rem 0 2rem 12rem;
   }
